@@ -16,7 +16,6 @@ Here’s the updated version of the `README.md` file with the necessary explanat
   - [Portfolio Optimization](#portfolio-optimization-modern-portfolio-theory)
   - [Machine Learning Model for Return Prediction](#machine-learning-model-for-return-prediction)
   - [Risk Management (Monte Carlo Simulation)](#risk-management-monte-carlo-simulation)
-  - [Visualizations](#visualizations)
 - [Running the Project](#running-the-project)
 - [Results](#results)
 - [Conclusion](#conclusion)
@@ -88,13 +87,6 @@ def monte_carlo_simulation(initial_investment, n_simulations, n_days, mean_retur
         simulation_results[i, :] = portfolio_value
     return simulation_results
 ```
-
-### Visualizations
-
-- **Monte Carlo Simulation Graph**: Shows the distribution of the portfolio value over time based on the simulations.
-- **Efficient Frontier Visualization**: Displays portfolios that optimize the risk-return tradeoff.
-- **Moving Averages & Adjusted Close Price**: Visualizes stock price data along with 50-day and 200-day moving averages.
-
 ```python
 plt.scatter(results[1,:], results[0,:], c=results[2,:], cmap='YlGnBu', marker='o')
 ```
@@ -132,5 +124,3 @@ Volatility: 35.97%
 
 The **ML-Portfolio Optimization** project successfully combines Modern Portfolio Theory (MPT) and machine learning to construct an optimized investment portfolio. By predicting returns with a Random Forest model and optimizing asset weights for maximum Sharpe ratio, the project provides investors with a comprehensive strategy for portfolio management. The Monte Carlo simulations offer a robust risk management technique, and the visualizations enhance decision-making.
 ```
-
-This version of the `README.md` file is structured correctly and ready for direct use in your GitHub repository. You can now copy and paste it into your project without issues!
